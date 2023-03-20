@@ -129,6 +129,22 @@ header
     margin:auto;
 }
 
+.button_dropdownMenu
+{
+    height:25px;
+    width: 50px;
+    position:absolute;
+    right: 05%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.button_dropdownMenu:hover
+{
+    cursor: pointer;
+
+}
+
 /*#endregion*/
 
 
