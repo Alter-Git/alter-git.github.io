@@ -1,65 +1,65 @@
+@media only screen and (max-width: 1600px) {
+body 
+{ 
+    width: 100%;
+    max-width: 1900px;
+    min-width: 1440px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+}
+}
+
 header
 {
     background-color: #181818;
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 0px;
     z-index: 1000;
 }
 
-body 
-{ 
-    position:relative;
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #181818;
-}
+    box-sizing: border-box;
+  } 
 
-.container
-{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: center;
-    display:flex;
-}
-
-.signin
-{
-    display:flex;
-    justify-content: center;
-    width: 97px;
-    height: 33px;
-    background-color: white;
-    margin-left: 10%;
-}
-
-.signin:after
-{
-    background-color: gray;
-}
-
-.signin:hover
-{
-    cursor: pointer;
-}
-
-.signin_text
-{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    color: black;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-}
 
 /*#region header menu*/ 
+
+.header_container
+{
+    position: absolute;
+    top:60px;
+    width: 100%;
+}
+
+.yourlogo
+{
+    width: 127px;
+    height: 18px;
+    position: absolute;
+    left: 57px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .header_menu
 {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    left: 30%;
+    
+    transform: translateY(-30%);
 }
+
+.header_menu_list
+{
+    display:flex;
+}
+
 
 .header_menu_item
 {
@@ -67,10 +67,8 @@ body
     font-weight: 500;
     color: white;
     font-size: 17px;
-    margin: 0 68px;
     display: inline-block;
-    text-align: center;
-    
+    padding: 0px 63px;
 }
 
 .header_menu_item:after
@@ -96,13 +94,49 @@ body
     opacity: 1;
 }
 
+/* sign in */
+
+.signin
+{
+    display:flex;
+    justify-content: center;
+    width: 97px;
+    height: 33px;
+    background-color: white;
+    position:absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.signin:after
+{
+    background-color: gray;
+}
+
+.signin:hover
+{
+    cursor: pointer;
+}
+
+.signin_text
+{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 17px;
+    display: flex;
+    margin:auto;
+}
+
 /*#endregion*/
 
 
 .firstpic
 {   
     position: absolute;
-    top: -175px;
+    top: -220px;
+    bottom: 0;
     left: 40%;
 }
 
@@ -113,7 +147,7 @@ body
     background-color: #a460f9;
     border-radius: 50%;
     position: relative;
-    top: 515px;
+    top: 545px;
     left: -30px;
     display: flex;
     z-index: -1;
@@ -121,8 +155,8 @@ body
 
 .firstpic_img
 {
-    height: 715px;
-    width: 307px;
+    height: auto;
+    max-width: 307px;
 }
 
 /*#region statistics*/ 
@@ -186,6 +220,46 @@ body
 .statistics :last-child .statistics_item_name
 {
     margin-left: 10px;
+
+}
+
+/*#endregion*/
+
+
+/*#region courses*/ 
+
+.section_courses
+{
+    position: relative;
+    top: 1050px;
+    height: 1600px;
+}
+
+.section_courses_centralImage
+{
+    position: relative;
+    top: 230px;
+
+}
+
+.section_courses_centralImage_oval
+{
+    position: relative;
+    top: -360px;
+    left: 24%;
+    width: 830px;
+    height: 380px;
+    
+}
+
+.section_courses_centralImage_text
+{
+
+    color:white;
+    text-align: center;
+    font-family: 'Krub', sans-serif;
+    font-size: 60pt;
+    size: 100px;
 
 }
 
