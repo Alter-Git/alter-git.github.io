@@ -142,7 +142,6 @@ header
 .button_dropdownMenu:hover
 {
     cursor: pointer;
-
 }
 
 /*#endregion*/
@@ -249,6 +248,7 @@ header
     position: relative;
     top: 1050px;
     height: 1600px;
+    width: 100%;
 }
 
 .section_courses_centralImage
@@ -262,21 +262,72 @@ header
 {
     position: relative;
     top: -360px;
-    left: 24%;
     width: 830px;
     height: 380px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
     
 }
 
 .section_courses_centralImage_text
 {
-
     color:white;
     text-align: center;
     font-family: 'Krub', sans-serif;
     font-size: 60pt;
     size: 100px;
+}
+
+
+.section_courses_sideText_square
+{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-bottom: -5px;
+    margin-right: 25px;
+    background-color: white;
+}
+
+.section_courses_sideText_text
+{
+    font-family: 'Krub', sans-serif;
+    font-weight: 800;
+    color:white;
+    font-size: 13px;
 
 }
 
+
+
 /*#endregion*/
+
+
+.section_courses_sideText1
+{
+    transform: rotateZ(-90deg);
+    position: absolute;
+    left: -40px;
+    top: 1250px;
+}
+
+.section_courses_sideText2
+{
+    transform: rotateZ(90deg);
+    position: absolute;
+    right: -40px;
+    top: 1250px;
+}
+
+
+
+
+
+@font-face {
+    font-family: "MyriadPro", sans-serif;
+    src: url("/assets/fonts/MyriadPro/Myriad\ Pro\ Bold\ SemiExtended.ttf") format("truetype"); 
+    
+    font-style: normal; 
+    font-weight: normal; 
+} 
