@@ -1,15 +1,13 @@
-@media only screen and (max-width: 1600px) {
 body 
 { 
     width: 100%;
-    max-width: 1900px;
     min-width: 1440px;
     position: relative;
     margin: 0;
     padding: 0;
     background-color: #181818;
 }
-}
+
 
 header
 {
@@ -279,13 +277,29 @@ header
     size: 100px;
 }
 
+.section_courses_sideText1
+{
+    transform: rotateZ(-90deg);
+    position: absolute;
+    left: -40px;
+    top: 1250px;
+}
+
+.section_courses_sideText2
+{
+    transform: rotateZ(90deg);
+    position: absolute;
+    right: -40px;
+    top: 1250px;
+}
+
 
 .section_courses_sideText_square
 {
     display: inline-block;
     height: 12px;
     width: 12px;
-    margin-bottom: -5px;
+    margin-bottom: -2px;
     margin-right: 25px;
     background-color: white;
 }
@@ -304,21 +318,6 @@ header
 /*#endregion*/
 
 
-.section_courses_sideText1
-{
-    transform: rotateZ(-90deg);
-    position: absolute;
-    left: -40px;
-    top: 1250px;
-}
-
-.section_courses_sideText2
-{
-    transform: rotateZ(90deg);
-    position: absolute;
-    right: -40px;
-    top: 1250px;
-}
 
 
 
