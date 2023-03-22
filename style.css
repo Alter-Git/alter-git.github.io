@@ -8,7 +8,6 @@ body
     background-color: #181818;
 }
 
-
 header
 {
     background-color: #181818;
@@ -19,14 +18,8 @@ header
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  } 
 
-
-/*#region header menu*/ 
+ /*#region header menu*/ 
 
 .header_container
 {
@@ -78,13 +71,13 @@ header
     height: 2px;
     margin-top: 18px;
     background-color: white;
-
     transition: opacity 0.1s linear;
 }
 
 .header_menu_item:hover
 {
     cursor: pointer;
+    opacity: 70%;
 }
 
 .header_menu_item:hover:after
@@ -92,7 +85,6 @@ header
     opacity: 1;
 }
 
-/* sign in */
 
 .signin
 {
@@ -105,16 +97,13 @@ header
     right: 15%;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.signin:after
-{
-    background-color: gray;
+    transition: 0.1s linear;
 }
 
 .signin:hover
 {
     cursor: pointer;
+    opacity:70%;
 }
 
 .signin_text
@@ -135,15 +124,24 @@ header
     right: 05%;
     top: 50%;
     transform: translateY(-50%);
+    transition: 0.1s linear;
 }
 
 .button_dropdownMenu:hover
 {
     cursor: pointer;
+    opacity:70%;
 }
-
 /*#endregion*/
 
+
+
+/*#region section home*/ 
+
+.section_home
+{
+    width: 100%;
+}
 
 .firstpic
 {   
@@ -172,7 +170,130 @@ header
     max-width: 307px;
 }
 
-/*#region statistics*/ 
+
+.text_ui
+{
+    position: absolute;
+    left: 5%;
+    top: 210px;
+    color:white;
+    font-family: 'Krub', sans-serif;
+    font-weight: 800;
+    font-size: 120px;
+}
+
+.text_ui_dot
+{
+    color:#a460f9;
+    font-family: 'Krub', sans-serif;
+    font-weight: 800;
+    font-size: 120px;
+    position: absolute;
+    right: -38px;
+}
+
+
+.text_beginner
+{
+    position: absolute;
+    left: -45px;
+    top: 500px;
+    color:white;
+    font-family: 'Krub', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    transform: rotateZ(-90deg);
+    letter-spacing: 8px;
+}
+
+.text_prodesigner
+{
+    position: relative;
+    width: 360px;
+    left: 17.5%;
+    top: 533px;
+}
+
+.text_prodesigner_square
+{
+    position:absolute;
+    left: -27px;
+    top: 7px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    display: inline-block;
+}
+
+.text_prodesigner_text
+{
+    color:white;
+    font-family: 'Krub', sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+    text-align: left;
+    line-height: 27px;
+}
+
+
+.edition
+{
+    display: block;
+    height:103px;
+    width:180px;
+    border: 2px solid white;
+    border-right: 0;
+    padding-left: 36px;
+    padding-top: 31px;
+    padding-bottom: -30px;
+    text-align: left;
+    line-height: 20px;
+    position:absolute;
+    right: 0%;
+    top: 210px;
+    box-sizing: border-box;
+}
+
+.edition_text
+{
+    color:white;
+    font-family: 'Krub', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+.edition_text2
+{
+    color:white;
+    font-family: 'Krub', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 6px;
+}
+
+.arrow1, .arrow2
+{
+    position:absolute;
+    left: 70%;
+    top: 700px;
+    width:60px;
+    height:auto;
+    transition: 0.1s linear;
+}
+
+.arrow2
+{
+    left: 30%;
+    transform: rotateZ(180deg);
+}
+
+.arrow1:hover, .arrow2:hover
+{
+    cursor: pointer;
+    opacity: 60%;
+}
+
 .statistics
 {
     position: absolute;
@@ -236,10 +357,94 @@ header
 
 }
 
+.block1
+{
+    position:absolute;
+    right: 11%;
+    top: 450px;
+    width: 300px;
+    height:auto;
+    justify-content: left;
+}
+
+.block1_title
+{
+    color:white;
+    font-family: 'Krub';
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+
+.block1_text
+{
+    position:relative;
+    top:10px;
+    color:white;
+    font-family: 'Krub';
+    font-weight: 600;
+    font-size: 15.5px;
+    line-height: 23px;
+    word-spacing: 2px;    
+    hyphens:auto;
+    
+}
+
+.block1_button_start
+{
+    position:relative;
+    top:40px;
+    height:47px;
+    width:145px;
+
+    color:white;
+    font-family: 'Krub';
+    font-weight: 700;
+    font-size: 12px;
+
+    padding-top:15px;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: #a460f9;
+    
+    display:inline-flex;
+}
+
+
+.block1_button_more
+{
+    position:relative;
+    top:40px;
+    right: 0;
+    height:47px;
+    width:145px;
+
+    color:white;
+    font-family: 'Krub';
+    font-weight: 700;
+    font-size: 12px;
+    
+    padding-top:15px;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: transparent;
+    
+    display:inline-flex;
+    transition: 0.1s linear;
+}
+
+.block1_button_start:hover, .block1_button_more:hover
+{
+    cursor: pointer;
+    opacity: 60%;
+}
+
+
 /*#endregion*/
 
 
-/*#region courses*/ 
+/*#region section courses*/ 
 
 .section_courses
 {
@@ -321,7 +526,7 @@ header
 
 
 
-
+/*#region custom fonts*/
 
 @font-face {
     font-family: "MyriadPro", sans-serif;
@@ -330,3 +535,5 @@ header
     font-style: normal; 
     font-weight: normal; 
 } 
+
+/*#endregion*/
